@@ -18,3 +18,8 @@ In this project on the pulsar EXO 2030+375, I have computed the mean and median 
 
 ![My Image](https://github.com/arijeetnath12/Data-driven-astronomy-with-Python/blob/70e612bd51752784d47dc21c01d47ece9f37a793/EXO2030+375%20Pulsar/meanstack.jpeg)
                       Mean Stack
+<p align="center">
+  <img src="https://github.com/arijeetnath12/Data-driven-astronomy-with-Python/blob/689872ea72d12debb72f2f28b78bf362d1a9d020/EXO2030+375%20Pulsar/medianstack.jpeg"/>
+  <br>
+  <em>Median Stack</em>
+</p>
