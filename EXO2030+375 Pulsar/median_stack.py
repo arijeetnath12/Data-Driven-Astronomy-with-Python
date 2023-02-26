@@ -21,11 +21,11 @@ def median_fits(img_list):
     return median_img,fits_list
 
 if __name__ == '__main__':
-    z_img = 'G:/Purdue/Spring 2023/Coursera/EXO2030+375_z.fits'
-    g_img = 'G:/Purdue/Spring 2023/Coursera/EXO2030+375_g.fits'
-    i_img = 'G:/Purdue/Spring 2023/Coursera/EXO2030+375_i.fits'
-    r_img = 'G:/Purdue/Spring 2023/Coursera/EXO2030+375_r.fits'
-    u_img = 'G:/Purdue/Spring 2023/Coursera/EXO2030+375_u.fits'
+    z_img = './EXO2030+375 Pulsar/EXO2030+375_z.fits'
+    g_img = './EXO2030+375 Pulsar/EXO2030+375_g.fits'
+    i_img = './EXO2030+375 Pulsar/EXO2030+375_i.fits'
+    r_img = './EXO2030+375 Pulsar/EXO2030+375_r.fits'
+    u_img = './EXO2030+375 Pulsar/EXO2030+375_u.fits'
 
     result = median_fits([z_img,g_img,i_img,r_img,u_img])
     print(np.shape(result[1]))
