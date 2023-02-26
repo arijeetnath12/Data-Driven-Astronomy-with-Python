@@ -12,14 +12,14 @@ Stacking images from different bands can create composite images that capture th
 
 In this project on the pulsar EXO 2030+375, I have computed the mean and median of a set of FITS files in various bands, including z-band, r-band, and others. EXO 2030+375 is a high-mass X-ray binary (HMXB) system consisting of a pulsar orbiting a massive companion star. The pulsar has a spin period of about 41.03 seconds and a magnetic field about 10^12 gauss, making it one of the most magnetized neutron stars known. The companion star is estimated to be a B0.5 Ib supergiant with a mass about 20 times that of the Sun.
 
-                                            
-![My Image](https://github.com/arijeetnath12/Data-driven-astronomy-with-Python/blob/689872ea72d12debb72f2f28b78bf362d1a9d020/EXO2030+375%20Pulsar/medianstack.jpeg)
-                                                                  Median Stack
-
-![My Image](https://github.com/arijeetnath12/Data-driven-astronomy-with-Python/blob/70e612bd51752784d47dc21c01d47ece9f37a793/EXO2030+375%20Pulsar/meanstack.jpeg)
-                      Mean Stack
 <p align="center">
   <img src="https://github.com/arijeetnath12/Data-driven-astronomy-with-Python/blob/689872ea72d12debb72f2f28b78bf362d1a9d020/EXO2030+375%20Pulsar/medianstack.jpeg"/>
   <br>
   <em>Median Stack</em>
+</p>
+
+<p align="center">
+  <img src="https://github.com/arijeetnath12/Data-driven-astronomy-with-Python/blob/70e612bd51752784d47dc21c01d47ece9f37a793/EXO2030+375%20Pulsar/meanstack.jpeg"/>
+  <br>
+  <em>Mean Stack</em>
 </p>
