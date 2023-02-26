@@ -51,11 +51,11 @@ def header_details(fits_img_index): # extract header details of image band
 
 
 if __name__ == '__main__':
-    z_img = 'G:/Purdue/Spring 2023/Coursera/EXO2030+375_z.fits'
-    g_img = 'G:/Purdue/Spring 2023/Coursera/EXO2030+375_g.fits'
-    i_img = 'G:/Purdue/Spring 2023/Coursera/EXO2030+375_i.fits'
-    r_img = 'G:/Purdue/Spring 2023/Coursera/EXO2030+375_r.fits'
-    u_img = 'G:/Purdue/Spring 2023/Coursera/EXO2030+375_u.fits'
+    z_img = './EXO2030+375 Pulsar/EXO2030+375_z.fits'
+    g_img = './EXO2030+375 Pulsar/EXO2030+375_g.fits'
+    i_img = './EXO2030+375 Pulsar/EXO2030+375_i.fits'
+    r_img = './EXO2030+375 Pulsar/EXO2030+375_r.fits'
+    u_img = './EXO2030+375 Pulsar/EXO2030+375_u.fits'
 
     data = mean_fits([i_img,g_img, i_img, r_img, u_img])
     bright_index = np.unravel_index(np.argmax(data, axis=None), data.shape) # gives the position of the brightest pixel
