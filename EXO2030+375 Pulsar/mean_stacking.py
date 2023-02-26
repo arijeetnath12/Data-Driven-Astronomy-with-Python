@@ -8,12 +8,11 @@ def mean_fits(fits_img):  # takes input of list of fits images
     n = len(fits_img)  # length of list
     if n > 0:
         hdulist = fits.open(fits_img[0])  # opening the HDU (Header/Data Unit) list.
-        img_array = hdulist[0].data # get an array of pixels for first fitt image
+        img_array = hdulist[0].data # get an array of pixels for first fits image
         for i in range(1, n):
             img_array += fits.open(fits_img[i])[0].data # add the pixel arrays of the subsequent images to img_array
         mean = img_array / n
-
-        return img_array
+        return mean
 
 
 def header_details(fits_img_index): # extract header details of image band
@@ -58,7 +57,7 @@ if __name__ == '__main__':
     r_img = 'G:/Purdue/Spring 2023/Coursera/EXO2030+375_r.fits'
     u_img = 'G:/Purdue/Spring 2023/Coursera/EXO2030+375_u.fits'
 
-    data = mean_fits([z_img, g_img, i_img, r_img, u_img])
+    data = mean_fits([i_img,g_img, i_img, r_img, u_img])
     bright_index = np.unravel_index(np.argmax(data, axis=None), data.shape) # gives the position of the brightest pixel
     val = data[bright_index]
     print("Index of brightest pixel: {}, Value of brightest pixel: {}".format(bright_index, val))
@@ -67,5 +66,4 @@ if __name__ == '__main__':
     plt.imshow(data, cmap=plt.cm.nipy_spectral_r)
     plt.xlabel('x-pixels (RA)')
     plt.ylabel('y-pixels (Dec)')
-    plt.colorbar()
     plt.show()
